@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+
+body {
+    font-family: 'Cursive',serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #C0C6C7;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 80%;
+}
+
+
+.left-div {
+    flex: 1;
+    padding: 100px;
+}
+
+.left-div img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.right-div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-right: 500px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: 2px solid #66CDAA;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, font-size 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #66CDAA;
+}
+
+button:active {
+    font-size: 18px;
+    color: #ffcc00;
+}
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s, color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+input[type="text"]::placeholder {
+    color: #aaa;
+}
+
+input[type="text"]:focus {
+    color: #007bff;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s, font-weight 0.3s;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+a:active {
+    font-weight: bold;
+}
+
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Pseudo-class Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the CSS Pseudo-class Challenge!</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="left-div">
+                <img src="fa4b753d-bfeb-4d17-a74e-d3197e3d3a11.jpg" alt="Sample Image">
+            </div>
+            <div class="right-div">
+                <button>Click Me!</button>
+                <input type="text" placeholder="Enter your name">
+                <a href="#">Visit our website</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
